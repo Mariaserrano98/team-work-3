@@ -6,21 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HackTGame</title>
     <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- replace {your_key} with the one you got from fontawesome -->
     <script
-      src="https://kit.fontawesome.com/{your_key}.js"
+      src="https://kit.fontawesome.com/cbb30fd3f7.js"
       crossorigin="anonymous"
     ></script>
   </head>
   <body>
     <header>
-      <h2>HackTGame</h2>
-      <div class="login">
-        <button type="login">lOGIN</button>
-        <button type="sign up">SIGN UP</button>
-      </div>
-      <div class="icons">
-        
+      <div class="header-container">
+        <div class="header-left">
+          <h3>
+            <span class="Hack">Hack</span><span class="TGame">TGame</span>
+          </h3>
+        </div>
+        <div class="header-right">
+          <div class="menu-icon">
+            <i class="fa-solid fa-bars fa-lg"></i>
+        </div>
+         
+          <div class="modal">
+            <div class="modal-content">
+              <span class="close"><i class="fa-solid fa-xmark fa-xl"></i></span>
+              <nav class="menu">
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Games</a></li>
+                  <li><a href="#">eSport</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+              <div class="icons">
+                <i class="fa-brands fa-twitter fa-sm" ></i>
+                <i class="fa-brands fa-twitch fa-sm"></i>
+                <i class="fa-brands fa-facebook-f fa-sm"></i>
+                <i class="fa-brands fa-instagram fa-sm"></i>
+                <i class="fa-brands fa-youtube fa-sm"></i>
+
+              </div>
+              <div class="buttons">
+                <button>Login</button>
+                <button>Signup</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="icons"></div>
+        </div>
       </div>
     </header>
     <main>
@@ -30,5 +62,5 @@
     </main>
     <footer></footer>
   </body>
-  <script src="js/app.js"></script>
+  <script src="assets/js/app.js"></script>
 </html>

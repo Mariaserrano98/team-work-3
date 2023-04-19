@@ -7,3 +7,90 @@
   border: 0;
   box-sizing: border-box;
 }
+header .header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 1rem; */
+  /* max-width: 1200px; */
+}
+header  .header-left{
+  display: flex;
+  align-items: center;
+}
+header .header-right{
+  display: flex;
+  align-items: center;
+}
+header .header-left h3 { 
+  display: inline-block; padding: 30px;
+  font-family: var(Poppins);
+}
+
+header .header-right .menu-icon{
+margin-right: 2em;
+padding: 0.5em;
+background-color: #282828;
+border-radius: 0.1rem;
+}
+header .header-left .Hack{
+  color:#000000 ;
+}
+header .header-left .TGame{
+  color:#FFC311;
+}
+header .header-right .modal{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 73%;
+  height: 100%;
+  z-index: 9999;
+background-color: #282828;
+}
+header .modal nav.menu ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+  display: flex; /* Agregado */
+  align-items: center; /* Agregado */
+}
+header .modal nav.menu ul {
+    list-style: none;
+    position: relative;
+  
+}
+
+header .modal nav.menu li {
+  display: inline-block; 
+  padding-top: 1em;
+  width: 80%;
+  border-bottom: 0.5px solid white;
+  bottom: -5px;
+}
+header .modal nav.menu li:last-child {
+  margin-bottom: 0;
+}
+
+header .modal nav.menu li a:hover {
+  color: #FFC311;
+}
+header .modal .icons{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 5px;
+  align-items: center;
+  margin: 1em;
+}
+header .modal span.close{
+/* display: flex;
+justify-content:space-evenly;
+align-content:baseline */
+position: absolute;
+right: 1rem;
+top: 1rem;
+
+}
+header .fa-solid, .fa-brands{
+  color: white;
+}
