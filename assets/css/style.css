@@ -21,7 +21,7 @@ header .header-right{
   align-items: center;
 }
 header .header-left h3 { 
-  display: inline-block; padding: 30px;
+  display: inline-block; padding: 1.875rem;
   font-family:'Titillium Web',sans-serif;
   font-size: 1.2rem;
 }
@@ -130,8 +130,6 @@ header .buttons button:hover{
     padding: 0.50rem 1rem;
     }
     header .modal .icons{
-      /* gap: 5px; */
-      /* align-items: center; */
       margin: 0.5rem 5.2rem;
       margin-right: 1rem;
     }
@@ -146,10 +144,38 @@ header .buttons button:hover{
      }
 }
 
-@media (width:1024px) {
-  header .header-left h3 { 
-    /* display: inline-block; padding: 30px; */
-    /* font-family:'Titillium Web',sans-serif; */
-font-size: 2rem;
+@media only screen and (min-width: 1024px) and (max-width:1920px){
+  header .header-left h3 {
+    font-size: 2.3rem;
+  margin: 3rem 0 0 5rem;
   }
+  header .header-left .Hack{
+    /* color: white; */
+    color: #000000;
+  }
+  header .header-right .modal{
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    z-index: 9999;
+  background-color: #282828; */
+  display: none !important;
+  }
+  header .header-right .menu-icon{
+    /* margin-right: 2em;
+    padding: 0.5em;
+    background-color: #282828;
+    border-radius: 0.1rem; */
+    display: none ;
+    }
+    header .modal .icons{
+      display: grid;
+      grid-auto-flow: column;
+      /* gap: 5px; */
+      align-items: center;
+      margin: 0.5rem 2rem;
+    }
+  
 }
