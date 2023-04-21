@@ -87,7 +87,6 @@ header .modal nav.menu li a:hover {
 header .modal .icons {
   display: grid;
   grid-auto-flow: column;
-  /* gap: 5px; */
   align-items: center;
   margin: 0.5rem 2rem;
 }
@@ -142,8 +141,8 @@ header .buttons button:hover {
     padding: 0.5rem 1rem;
   }
   header .modal .icons {
-    margin: 0.5rem 5.2rem ;
-    margin-right: 1rem ;
+    margin: 0.5rem 5.2rem;
+    margin-right: 1rem;
   }
   header .login,
   header .signup {
@@ -153,23 +152,16 @@ header .buttons button:hover {
     margin: 1rem 0;
   }
 }
-.version-escritorio{
-  display: none;
-}
-.button-escritorio{
+.version-escritorio {
   display: none;
 }
 
 /* Escritorio */
-@media only screen and (min-width: 1280px) and (max-width: 1920px) {
-  .button-movil{
-    display: none !important;
-  }
-  
-  .version-movil{
+@media only screen and (min-width: 1280px) {
+  .version-movil {
     display: none;
   }
-  .version-escritorio{
+  .version-escritorio {
     display: block;
   }
   header .header-left h3 {
@@ -188,8 +180,8 @@ header .buttons button:hover {
     /* width: 75%; */
     height: 100%;
     z-index: 9999;
-    background-color: transparent;  
-     transform: translate(18.3em);
+    background-color: transparent;
+    transform: translate(18.3em);
     transition: all 0.3s ease-in;
   }
   header .header-right .menu-icon {
@@ -199,24 +191,41 @@ header .buttons button:hover {
     border-radius: 0.1rem; */
     display: none;
   }
-  /* iconos */
+  header .modal .modal-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 1em
+  }
+  header .modal .modal-content .nav {
+    order: 3;
+    grid-column: 1/4;
+  }
+  header .modal .modal-content .icons {
+  }
+  header .modal .modal-content .buttons {
+    grid-column: 3;
+    order: 2;
+    justify-self: end;
+  }
+  /* iconos 
   header .modal .icons {
-    display: block; 
+    /* display: block;
     grid-auto-flow: column;
-    gap: 5px;
+    gap: 5px; */
     /* align-items: center; */
-   /* margin: 0.5rem 2rem; */
-  /* padding: 4rem; */
-  font-size: 1.5rem;
-margin-left: -15rem;
-  padding: 2rem;
+    /* margin: 0.5rem 2rem; */
+    /* padding: 4rem; 
+    font-size: 1.5rem;
+    margin-left: -15rem;
+    padding: 2rem;
   }
   header .fa-solid,
-  .fa-brands{
-  color: #000000;
+  .fa-brands {
+    color: #000000;
   }
 
-/* cerrar ventana modal */
+  /* cerrar ventana modal */
   header .modal span.close {
     display: none;
   }
@@ -226,7 +235,7 @@ margin-left: -15rem;
     /* text-decoration: none; */
     /* line-height: 2rem; */
     display: flex;
-   /* display: inline-flex; */
+    /* display: inline-flex; */
     /* align-items: center; */
     /* font-family: "Poppins", sans-serif;
     */
@@ -237,10 +246,9 @@ margin-left: -15rem;
     padding-top: 1em;
     display: inline-block;
     width: auto;
-    
+
     /* width: 10%;
     border-bottom: 0.5px solid black; */
     /* bottom: -5px; */
   }
-  
 }
