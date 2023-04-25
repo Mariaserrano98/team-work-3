@@ -24,14 +24,18 @@ header .header-left h3 {
   display: inline-block;
   padding: 1.875rem;
   font-family: "Titillium Web", sans-serif;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 header .header-right .menu-icon {
   margin-right: 2em;
-  padding: 0.5em;
+  width: 50px;
+  height: 50px;
   background-color: #282828;
-  border-radius: 0.1rem;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header .header-left .Hack {
   color: #000000;
@@ -43,7 +47,7 @@ header .header-right .modal {
   position: fixed;
   top: 0;
   right: 0;
-  min-width: 18.225em;
+  min-width: 70vw;
   height: 100%;
   z-index: 9999;
   background-color: #282828;
@@ -129,7 +133,7 @@ header .login,
 header .buttons button:hover {
   color: black;
 }
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
   header .header-right .modal {
     min-width: 36em;
     transform: translate(36em);
@@ -152,37 +156,37 @@ header .buttons button:hover {
     margin: 1rem 0;
   }
 }
-.version-escritorio {
-  display: none;
-}
 
 /* Escritorio */
 @media only screen and (min-width: 1280px) {
-  .version-movil {
-    display: none;
-  }
-  .version-escritorio {
-    display: block;
+  
+  header .header-left {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   header .header-left h3 {
     font-size: 2.2rem;
-    margin: 3rem 0 0 5rem;
   }
   header .header-left .Hack {
-    /* color: white; */
-    color: #000000;
+    color: white;
   }
+  header .header-right,
   header .header-right .modal {
-    display: flex;
+    z-index: 9999;
+    background-color: transparent;
+    transition: all 0.3s ease-in;
+    width: 100%;
+    height: auto;
+    transform: translate(0);
+    position: relative;
+    /* display: flex;
     flex-direction: column;
     top: 0;
     right: 0;
-    /* width: 75%; */
-    height: 100%;
-    z-index: 9999;
-    background-color: transparent;
-    transform: translate(18.3em);
-    transition: all 0.3s ease-in;
+    /* width: 75%; 
+    height: 100%; */
   }
   header .header-right .menu-icon {
     /* margin-right: 2em;
@@ -192,30 +196,110 @@ header .buttons button:hover {
     display: none;
   }
   header .modal .modal-content {
+    margin-left: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap: 1em
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+    height: auto;
   }
-  header .modal .modal-content .nav {
-    order: 3;
-    grid-column: 1/4;
+  header .header-container .header-right .modal .modal-content nav.menu {
+    /* order: 3; */
+    grid-column: 2/4;
+    grid-row: 2/3;
+    display: flex;
+    justify-content: flex-start;
+    /* padding: 0;
+    margin: 0; */
+  }
+  header .header-container .header-right .modal .modal-content nav.menu ul {
+    margin-top: 1em;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  header .header-container .header-right .modal .modal-content nav.menu ul li {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+  header
+    .header-container
+    .header-right
+    .modal
+    .modal-content
+    nav.menu
+    ul
+    li:not(li:first-of-type) {
+    margin-left: 2.7em;
+  }
+  header
+    .header-container
+    .header-right
+    .modal
+    .modal-content
+    nav.menu
+    ul
+    li
+    a {
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-size: 1.2rem;
+  }
+  header .modal .modal-content {
+    margin-right: 4em;
   }
   header .modal .modal-content .icons {
+    grid-column: 2/3;
+    order: 1;
+    display: flex;
+    justify-content: flex-start;
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+  }
+  header .modal .modal-content .icons i:not(i:first-of-type) {
+    margin-left: 0.8em;
+  }
+  header .modal .modal-content .icons i {
+    /* margin-bottom: 0; */
   }
   header .modal .modal-content .buttons {
-    grid-column: 3;
     order: 2;
-    justify-self: end;
+    grid-column: 3/4;
+    justify-content: flex-start;
+    /* justify-self: end; */
+  }
+  header .modal .modal-content .buttons button {
+    margin: 0;
+    padding: 0;
+    width: auto;
+    padding: 0.6em 0;
+    min-width: 45%;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  header .modal .modal-content .buttons button:first-of-type {
+    border-top-left-radius: 1.3rem;
+    border-bottom-left-radius: 1.3rem;
+    border-left: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.08);
+  }
+  header .modal .modal-content .buttons button:last-of-type {
+    border-top-right-radius: 1.3rem;
+    border-bottom-right-radius: 1.3rem;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+    border-right: 0;
   }
   /* iconos 
   header .modal .icons {
     /* display: block;
     grid-auto-flow: column;
     gap: 5px; */
-    /* align-items: center; */
-    /* margin: 0.5rem 2rem; */
-    /* padding: 4rem; 
+  /* align-items: center; */
+  /* margin: 0.5rem 2rem; */
+  /* padding: 4rem; 
     font-size: 1.5rem;
     margin-left: -15rem;
     padding: 2rem;
