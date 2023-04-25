@@ -159,7 +159,6 @@ header .buttons button:hover {
 
 /* Escritorio */
 @media only screen and (min-width: 1280px) {
-  
   header .header-left {
     width: 40%;
     display: flex;
@@ -181,18 +180,8 @@ header .buttons button:hover {
     height: auto;
     transform: translate(0);
     position: relative;
-    /* display: flex;
-    flex-direction: column;
-    top: 0;
-    right: 0;
-    /* width: 75%; 
-    height: 100%; */
   }
   header .header-right .menu-icon {
-    /* margin-right: 2em;
-    padding: 0.5em;
-    background-color: #282828; 
-    border-radius: 0.1rem; */
     display: none;
   }
   header .modal .modal-content {
@@ -204,13 +193,10 @@ header .buttons button:hover {
     height: auto;
   }
   header .header-container .header-right .modal .modal-content nav.menu {
-    /* order: 3; */
     grid-column: 2/4;
     grid-row: 2/3;
     display: flex;
     justify-content: flex-start;
-    /* padding: 0;
-    margin: 0; */
   }
   header .header-container .header-right .modal .modal-content nav.menu ul {
     margin-top: 1em;
@@ -262,14 +248,10 @@ header .buttons button:hover {
   header .modal .modal-content .icons i:not(i:first-of-type) {
     margin-left: 0.8em;
   }
-  header .modal .modal-content .icons i {
-    /* margin-bottom: 0; */
-  }
   header .modal .modal-content .buttons {
     order: 2;
     grid-column: 3/4;
     justify-content: flex-start;
-    /* justify-self: end; */
   }
   header .modal .modal-content .buttons button {
     margin: 0;
@@ -292,22 +274,6 @@ header .buttons button:hover {
     border-left: 1px solid rgba(255, 255, 255, 0.15);
     border-right: 0;
   }
-  /* iconos 
-  header .modal .icons {
-    /* display: block;
-    grid-auto-flow: column;
-    gap: 5px; */
-  /* align-items: center; */
-  /* margin: 0.5rem 2rem; */
-  /* padding: 4rem; 
-    font-size: 1.5rem;
-    margin-left: -15rem;
-    padding: 2rem;
-  }
-  header .fa-solid,
-  .fa-brands {
-    color: #000000;
-  }
 
   /* cerrar ventana modal */
   header .modal span.close {
@@ -316,13 +282,7 @@ header .buttons button:hover {
   /* menu de navegación */
   header .modal nav.menu ul li a {
     color: black;
-    /* text-decoration: none; */
-    /* line-height: 2rem; */
     display: flex;
-    /* display: inline-flex; */
-    /* align-items: center; */
-    /* font-family: "Poppins", sans-serif;
-    */
     margin-bottom: -0.35rem;
     font-size: 2rem;
   }
@@ -330,9 +290,5 @@ header .buttons button:hover {
     padding-top: 1em;
     display: inline-block;
     width: auto;
-
-    /* width: 10%;
-    border-bottom: 0.5px solid black; */
-    /* bottom: -5px; */
   }
 }
