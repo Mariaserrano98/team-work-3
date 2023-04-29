@@ -236,6 +236,10 @@ header .buttons button:hover {
   header .modal .modal-content {
     margin-right: 4em;
   }
+  /*iconos*/
+  header .modal .modal-content .icons i:hover{
+    color: #ffc311;
+  }
   header .modal .modal-content .icons {
     grid-column: 2/3;
     order: 1;
@@ -248,6 +252,7 @@ header .buttons button:hover {
   header .modal .modal-content .icons i:not(i:first-of-type) {
     margin-left: 0.8em;
   }
+  /*buttons*/
   header .modal .modal-content .buttons {
     order: 2;
     grid-column: 3/4;
@@ -285,6 +290,9 @@ header .buttons button:hover {
     display: flex;
     margin-bottom: -0.35rem;
     font-size: 2rem;
+  }
+  header .modal nav.menu ul li a:hover{
+    color: #ffc311 !important;
   }
   header .modal nav.menu li {
     padding-top: 1em;
