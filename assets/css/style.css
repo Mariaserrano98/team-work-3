@@ -299,4 +299,29 @@ header .buttons button:hover {
     display: inline-block;
     width: auto;
   }
+  /*scroll*/
+  /* seguir mirando lo del scroll este codigo da problemas*/
+  /* .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+  }
+  .sticky.active {
+    animation: slideDown 0.5s;
+  }
+  @keyframes slideDown {
+    from {
+      transform: translateY(-50%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+  body {
+    overflow-y: scroll;
+  }
+  .slider img{
+    width: 100%;
+  } */
 }
