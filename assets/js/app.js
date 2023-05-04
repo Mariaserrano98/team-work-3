@@ -19,6 +19,10 @@ window.addEventListener("load", function () {
   }
 });
 
+
+
+
+// seguir mirando lo del scroll
 // scroll
 // window.addEventListener('scroll', function() {
 //   const header = document.querySelector('.sticky');
